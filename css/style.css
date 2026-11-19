@@ -20,6 +20,11 @@ body {
   line-height: 1.7;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
 /* Typografi */
 h1,
 h2,
@@ -51,8 +56,11 @@ p {
   max-width: 65ch;
 }
 
-/* Header */
+/* Sticky Header */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #182b3b;
   padding: 1.25rem 2rem;
 }
